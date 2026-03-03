@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yearly Income</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div id="menuBtn">
+        <div class="bar" id="bar1"></div>
+        <div class="bar" id="bar2"></div>
+        <div class="bar" id="bar3"></div>
+    </div>
+
+    <h1>2025 INCOME</h1>
+    <div id="top-container">
+        <div id="top1">
+
+        </div>
+
+        <div id="top2">
+            <div id="startBalanceContainer">
+                <h3>Start Balance</h3>
+                <input type="number" min="0" value="0" id="startBalance">
+            </div>
+            <div id="differenceContainer">
+                <div id="percentContainer">
+                    <h3 id="percentage" value="0">0</h3>
+                </div>
+                <div id="moneyContainer">
+                    <h3 id="grandTotal">$000.00</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom-container">
+        <div id="labelContainer">
+            <div class="label">Month</div>
+            <div class="label">Expense</div>
+            <div class="label">Income</div>
+            <div class="label">Saved/Loss</div>
+        </div>
+        <div class="month" id="">
+            <div class="label">January</div>
+            <input data-month="jan" id="janExp" class="label" type="number" value="0" min="0">
+            <input data-month="jan" id="janInc" class="label" type="number" value="0" min="0">
+            <div id="janDif" class="label month-result" value="0" min="0">0</div>
+        </div>
+        <div class="month" id="">
+            <div class="label">February</div>
+            <input data-month="feb" id="febExp" class="label" type="number" value="0" min="0.00">
+            <input data-month="feb" id="febInc" class="label" type="number" value="0" min="0">
+            <div id="febDif" class="label month-result" value="0" min="0">0</div>
+        </div>
+        <div class="month" id="">
+            <div class="label">March</div>
+            <input data-month="mar" id="marExp" class="label" type="number" value="0" min="0">
+            <input data-month="mar" id="marInc" class="label" type="number" value="0" min="0">
+            <div id="marDif" class="label month-result" value="0" min="0">0</div>
+        </div>
+        <div class="month" id="">
+            <div class="label">April</div>
+            <input data-month="apr" id="aprExp" class="label" type="number" value="0" min="0">
+            <input data-month="apr" id="aprInc" class="label" type="number" value="0" min="0">
+            <div id="aprDif" class="label month-result" value="0" min="0">0</div>
+        </div>
+        <div class="month" id="">
+            <div class="label">May</div>
+            <input data-month="may" id="mayExp" class="label" type="number" value="0" min="0">
+            <input data-month="may" id="mayInc" class="label" type="number" value="0" min="0">
+            <div id="mayDif" class="label month-result" value="0" min="0">0</div>
+        </div>
+        <div class="month" id="">
+            <div class="label">June</div>
+            <input data-month="jun" id="junExp" class="label" type="number" value="0" min="0">
+            <input data-month="jun" id="junInc" class="label" type="number" value="0" min="0">
+            <div id="junDif" class="label month-result" value="0" min="0">0</div>
+        </div>
+        <div class="month" id="">
+            <div class="label">July</div>
+            <input data-month="jul" id="julExp" class="label" type="number" value="0" min="0">
+            <input data-month="jul" id="julInc" class="label" type="number" value="0" min="0">
+            <div id="julDif" class="label month-result" value="0" min="0">0</div>
+        </div>
+        <div class="month" id="">
+            <div class="label">August</div>
+            <input data-month="aug" id="augExp" class="label" type="number" value="0" min="0">
+            <input data-month="aug" id="augInc" class="label" type="number" value="0" min="0">
+            <div id="augDif" class="label month-result" value="0" min="0">0</div>
+        </div>
+        <div class="month" id="">
+            <div class="label">September</div>
+            <input data-month="sep" id="sepExp" class="label" type="number" value="0" min="0">
+            <input data-month="sep" id="sepInc" class="label" type="number" value="0" min="0">
+            <div id="sepDif" class="label month-result" value="0" min="0">0</div>
+        </div>
+        <div class="month" id="">
+            <div class="label">October</div>
+            <input data-month="oct" id="octExp" class="label" type="number" value="0" min="0">
+            <input data-month="oct" id="octInc" class="label" type="number" value="0" min="0">
+            <div id="octDif" class="label month-result" value="0" min="0">0</div>
+        </div>
+        <div class="month" id="">
+            <div class="label">November</div>
+            <input data-month="nov" id="novExp" class="label" type="number" value="0" min="0">
+            <input data-month="nov" id="novInc" class="label" type="number" value="0" min="0">
+            <div id="novDif" class="label month-result" value="0" min="0">0</div>
+        </div>
+        <div class="month" id="">
+            <div class="label">December</div>
+            <input data-month="dec" id="decExp" class="label" type="number" value="0" min="0">
+            <input data-month="dec" id="decInc" class="label" type="number" value="0" min="0">
+            <div id="decDif" class="label month-result" value="0" min="0">0</div>
+        </div>
+    </div>
+
+    
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
