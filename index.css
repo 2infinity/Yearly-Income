@@ -8,8 +8,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
-    
 }
 #top1{
     width: 50%;
@@ -80,7 +78,7 @@ div{
 #menuContainer{
     position: fixed;
     top: 0px;
-    right: -400px;
+    right: -500px;
     width: 400px;
     height: 600px;
     transition: right 0.25s linear;
@@ -92,6 +90,18 @@ div{
 #menuContainer.open{
     right: 0px;
 }
-button{
+.menuBtn{
     cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: cyan;
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#menuLabel{
+    font-size: 50px;
+    margin-top: 8px;
 }
