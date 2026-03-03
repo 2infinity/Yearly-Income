@@ -1,0 +1,8 @@
+@media(max-width: 600px){
+  .month-label{
+    font-size: 16px;
+  }
+ .labeled{
+    font-size: 18px;
+ }
+}

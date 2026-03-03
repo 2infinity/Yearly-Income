@@ -10,6 +10,7 @@ const menuBtn = document.getElementById("menuBtn");
 const bar1 = document.getElementById("bar1");
 const bar2 = document.getElementById("bar2");
 const bar3 = document.getElementById("bar3");
+const menuContainer = document.getElementById("menuContainer");
 
 // EventListener
 document.addEventListener("input", (e) => {
@@ -60,8 +61,19 @@ function updateGrandTotal() {
         percentage.textContent = `${growth.toFixed(0)}%`;
     } else {
         // Prevents "Infinity%" if starting balance is 0 or empty
-        percentage.textContent = "0.00%";
+        percentage.textContent = "0%";
     }
 
 
 }
+
+
+
+
+
+menuBtn.addEventListener("click", ()=>{
+   bar1.classList.toggle("bar1"); 
+   bar2.classList.toggle("bar2");
+   bar3.classList.toggle("bar3");
+   menuContainer.classList.toggle("copper");
+});

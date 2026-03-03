@@ -1,5 +1,7 @@
 body{
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
 #top-container{
@@ -11,11 +13,11 @@ body{
 }
 #top1{
     width: 50%;
-    border: 2px solid black;
+    border: 2px solid cyan;
 }
 #top2{
     width: 50%;
-    border: 2px solid black;
+    border: 2px solid cyan;
 }
 
 #startBalance{
@@ -33,7 +35,7 @@ body{
 
 .label{
     width: 25%;
-    border: 2px solid black;
+    border: 2px solid cyan;
     font-size: 20px;
     text-align: center;
     font-weight: bolder;
@@ -48,13 +50,44 @@ body{
 .bar{
     width: 75px;
     height: 10px;
-    background-color: black;
+    background-color: cyan;
     border-radius: 20px;
     margin: 10px;
+    transition: transform 0.25s linear;
 }
 #menuBtn{
     position: fixed;
     right: 0px;
     top: 0px;
     cursor: pointer;
+}
+div{
+    text-align: center;
+}
+
+.bar1{
+    transform: rotate(-45deg) translate(-20px, 18px);
+}
+.bar2{
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.bar3{
+    transform: translateX(100px);
+}
+
+
+#menuContainer{
+    position: fixed;
+    top: 0px;
+    right: -400px;
+    width: 400px;
+    height: 400px;
+    transition: right 0.25s linear;
+    z-index: 3;
+    background-color: black;
+    color: cyan;
+    border: 2px solid cyan;
+}
+.copper{
+    right: 0px;
 }
