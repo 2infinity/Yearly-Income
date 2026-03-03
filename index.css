@@ -20,8 +20,9 @@ body{
 
 #startBalance{
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bolder;
+    width: 100px ;
 }
 
 #labelContainer{
