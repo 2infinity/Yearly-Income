@@ -60,6 +60,7 @@ body{
     right: 0px;
     top: 0px;
     cursor: pointer;
+    z-index: 5;
 }
 div{
     text-align: center;
@@ -83,11 +84,14 @@ div{
     width: 400px;
     height: 600px;
     transition: right 0.25s linear;
-    
     background-color: black;
     color: cyan;
     border: 2px solid cyan;
+    border-radius: 20px
 }
 #menuContainer.open{
-    right: 15px;
+    right: 0px;
+}
+button{
+    cursor: pointer;
 }
