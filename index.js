@@ -75,5 +75,5 @@ menuBtn.addEventListener("click", ()=>{
    bar1.classList.toggle("bar1"); 
    bar2.classList.toggle("bar2");
    bar3.classList.toggle("bar3");
-   menuContainer.classList.toggle("copper");
+   menuContainer.classList.toggle("open");
 });

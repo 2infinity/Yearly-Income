@@ -81,13 +81,13 @@ div{
     top: 0px;
     right: -400px;
     width: 400px;
-    height: 400px;
+    height: 600px;
     transition: right 0.25s linear;
-    z-index: 3;
+    
     background-color: black;
     color: cyan;
     border: 2px solid cyan;
 }
-.copper{
-    right: 0px;
+#menuContainer.open{
+    right: 15px;
 }
