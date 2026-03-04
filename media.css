@@ -30,4 +30,7 @@
  .bar{
   width: 50px;
  }
+ #menuContainer{
+  z-index: 3;
+ }
 }
