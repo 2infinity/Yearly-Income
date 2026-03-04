@@ -16,6 +16,19 @@
  
 }
 
+@media(max-width: 344px){
+  #ebView{
+    position: relative;
+    top: 100px;
+    right: 100px;
+  }
+  #sbView{
+    position: relative;
+    top: 100px;
+    right: 500px;
+  }
+}
+
 @media(max-width: 351px){
   #ebView{
   position: absolute;
@@ -33,4 +46,71 @@
  #menuContainer{
   z-index: 3;
  }
+}
+
+@media(max-width: 360px){
+ #ebView{
+  position: absolute;
+  right: 90px;
+  top: 100px;
+ }
+ #sbView{
+  position: absolute;
+  left: -800px;
+  top: 100px;
+ }
+}
+
+@media(max-width: 400px){
+  .bar{
+    width: 50px;
+  }
+  #sbView{
+    position: absolute;
+    top: 100px;
+    left: -95px;
+  }
+  #ebView{
+    position: absolute;
+    top: 100px;
+    left: -8px;
+  }
+  label{
+    font-size: larger;
+  }
+  #menuContainer{
+    z-index: 3;
+  }
+}
+
+@media(max-width: 420px){
+  #ebView{
+    position: absolute;
+    top: 100px;
+    left: 5px;
+  }
+  #sbView{
+    position: absolute;
+    top: 100px;
+    left: -90px;
+  }
+  #menuContainer{
+    z-index: 3;
+  }
+}
+
+@media(max-width: 440px){
+  #ebView{
+    position: absolute;
+    top: 100px;
+    left: 12px;
+  }
+  #sbView{
+    position: absolute;
+    top: 100px;
+    left: -90px;
+  }
+  #menuContainer{
+    z-index: 3;
+  }
 }

@@ -1,3 +1,13 @@
+// Light & Dark Mode
+const top1 = document.getElementById("top1");
+const top2 = document.getElementById("top2");
+const label = document.querySelectorAll(".label");
+const bar = document.querySelectorAll(".bar");
+const lightDark = document.getElementById("lightDark");
+const darkLight = document.getElementById("darkLight");
+
+
+
 // viewing starting balance & end balance
 const sbView = document.getElementById("sbView");
 const ebView = document.getElementById("ebView"); 
@@ -83,3 +93,53 @@ menuBtn.addEventListener("click", ()=>{
    bar3.classList.toggle("bar3");
    menuContainer.classList.toggle("open");
 });
+
+
+
+lightDark.addEventListener("click", manipulationDark);
+
+function manipulationDark(){
+    document.body.style.color = "black";
+    document.body.style.backgroundColor = "white";
+    lightDark.style.display = "none";
+    darkLight.style.display = "inline";
+    top1.style.border = "black solid 2px";
+    top2.style.border = "black solid 2px";
+    label.forEach((e)=>{
+        e.style.border = "black solid 2px";
+    });
+    bar.forEach((e)=>{
+        e.style.backgroundColor = "black"
+    });
+    menuContainer.style.backgroundColor = "white";
+    menuContainer.style.color = "black";
+    menuContainer.style.border = "2px solid black";
+    menuBtn.forEach((e)=>{
+        e.style.backgroundColor = "black";
+        e.style.color = "cyan";
+    });
+}
+
+darkLight.addEventListener("click", manipulationLight);
+
+function manipulationLight(){
+    document.body.style.color = "white";
+    document.body.style.backgroundColor = "black";
+    lightDark.style.display = "inline";
+    darkLight.style.display = "none";
+    top1.style.border = "cyan solid 2px";
+    top2.style.border = "cyan solid 2px";
+    label.forEach((e)=>{
+        e.style.border = "cyan solid 2px";
+    });
+    bar.forEach((e)=>{
+        e.style.backgroundColor = "cyan";
+    });
+    menuContainer.style.backgroundColor = "black";
+    menuContainer.style.color = "cyan";
+    menuContainer.style.border = "2px solid cyan";
+    menuBtn.forEach((e)=>{
+        e.style.backgroundColor = "cyan";
+        e.style.color = "black";
+    });
+}

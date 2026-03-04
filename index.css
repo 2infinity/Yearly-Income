@@ -124,3 +124,7 @@ div{
 #ebView{
     margin-top: 75px;
 }
+
+#darkLight{
+    display: none;
+}
