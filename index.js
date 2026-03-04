@@ -1,3 +1,7 @@
+// viewing starting balance & end balance
+const sbView = document.getElementById("sbView");
+const ebView = document.getElementById("ebView"); 
+
 // starting balance - fixed to reference the element
 const sb = document.getElementById("startBalance");
 
@@ -64,6 +68,8 @@ function updateGrandTotal() {
         percentage.textContent = "0%";
     }
 
+    sbView.textContent = `$${startingBalanceValue}`;
+    ebView.textContent = `$${startingBalanceValue + total}`;
 
 }
 

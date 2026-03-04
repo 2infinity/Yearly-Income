@@ -5,4 +5,29 @@
  .labeled{
     font-size: 18px;
  }
+ #menuContainer{
+  width: 300px;
+  height: 500px;
+ }
+ .view{
+  font-size: smaller;
+  
+ }
+ 
+}
+
+@media(max-width: 351px){
+  #ebView{
+  position: absolute;
+  right: 65px;
+  top: 100px;
+ }
+ #sbView{
+  position: absolute;
+  left: -100px;
+  top: 100px;
+ }
+ .bar{
+  width: 50px;
+ }
 }

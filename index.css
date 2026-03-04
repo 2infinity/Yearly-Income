@@ -12,6 +12,9 @@ body{
 #top1{
     width: 50%;
     border: 2px solid cyan;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 #top2{
     width: 50%;
@@ -99,9 +102,25 @@ div{
     color: black;
     font-weight: bolder;
     font-size: larger;
+    transition: transform 0.25s linear;
+}
+.menuBtn:hover{
+    transform: scale(1.2);
 }
 
 #menuLabel{
     font-size: 50px;
     margin-top: 8px;
+}
+
+.view{
+    font-size: xx-large;
+    width: 300px;
+    margin-top: 50px;
+}
+#sbView{
+    margin-top: 75px;
+}
+#ebView{
+    margin-top: 75px;
 }
