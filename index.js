@@ -5,6 +5,7 @@ const label = document.querySelectorAll(".label");
 const bar = document.querySelectorAll(".bar");
 const lightDark = document.getElementById("lightDark");
 const darkLight = document.getElementById("darkLight");
+const clearBtn = document.getElementById("clearBtn");
 
 
 
@@ -142,4 +143,15 @@ function manipulationLight(){
         e.style.backgroundColor = "cyan";
         e.style.color = "black";
     });
+}
+
+clearBtn.addEventListener("click", clearInput);
+
+function clearInput(){
+    sb.value = "0";
+    updateGrandTotal();
+    const month = e.target.getAttribute("data-month");
+    if (month) {
+        calculateMonth(month);
+    }
 }
