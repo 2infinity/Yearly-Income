@@ -115,10 +115,7 @@ function manipulationDark(){
     menuContainer.style.backgroundColor = "white";
     menuContainer.style.color = "black";
     menuContainer.style.border = "2px solid black";
-    menuBtn.forEach((e)=>{
-        e.style.backgroundColor = "black";
-        e.style.color = "cyan";
-    });
+ 
 }
 
 darkLight.addEventListener("click", manipulationLight);
@@ -139,10 +136,8 @@ function manipulationLight(){
     menuContainer.style.backgroundColor = "black";
     menuContainer.style.color = "cyan";
     menuContainer.style.border = "2px solid cyan";
-    menuBtn.forEach((e)=>{
-        e.style.backgroundColor = "cyan";
-        e.style.color = "black";
-    });
+    
+    
 }
 
 clearBtn.addEventListener("click", clearInput);
