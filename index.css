@@ -44,14 +44,14 @@ body{
     height: 5px;
     width: 50px; 
     background-color: cyan;
-    transition: height 1s linear;
+    transition: height 0.25s linear;
     z-index: 1;
 }
 #startBar{
     height: 5px;
     width: 50px;
     background-color: cyan;
-    transition: height 1s linear;
+    transition: height 0.25s linear;
     z-index: 1;
 }
 /* options bar graph */

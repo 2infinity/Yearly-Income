@@ -8,6 +8,10 @@ const darkLight = document.getElementById("darkLight");
 const clearBtn = document.getElementById("clearBtn");
 
 
+// bar graph elements 
+const endBar = document.getElementById("endBar");
+const startBar = document.getElementById("startBar");
+
 
 // viewing starting balance & end balance
 const sbView = document.getElementById("sbView");
@@ -81,9 +85,31 @@ function updateGrandTotal() {
 
     sbView.textContent = `$${startingBalanceValue}`;
     ebView.textContent = `$${startingBalanceValue + total}`;
-
+    const endBalanced = startingBalanceValue + total;
+    const growth = (total / startingBalanceValue) * 100;
+    if(endBalanced>startingBalanceValue){
+       if(growth>90){
+           endBar.style.height = "150px";
+           startBar.style.height = "75px";
+       }
+       else if(growth>90){
+           startBar.style.height = "37.5px";
+           endBar.style.height = "175px";
+       }
+       
+    }
+    else if(startingBalanceValue>endBalanced){
+       
+    }
+    else if(startingBalanceValue===0&& endBalanced===0){
+        startBar.style.height = "5px";
+        endBar.style.height = "5px";
+    }
+    else if(endBalanced===startingBalanceValue){
+       endBar.style.height = "75px";
+       startBar.style.height = "75px";
+    }
 }
-
 
 
 
