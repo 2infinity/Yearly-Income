@@ -88,14 +88,15 @@ function updateGrandTotal() {
     const endBalanced = startingBalanceValue + total;
     const growth = (total / startingBalanceValue) * 100;
     if(endBalanced>startingBalanceValue){
-       if(growth>90){
+            if (growth > 125) {
+    startBar.style.height = "37.5px";
+    endBar.style.height = "140px";
+}
+      else if(growth>99){
            endBar.style.height = "150px";
            startBar.style.height = "75px";
        }
-       else if(growth>90){
-           startBar.style.height = "37.5px";
-           endBar.style.height = "175px";
-       }
+       
        
     }
     else if(startingBalanceValue>endBalanced){
