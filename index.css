@@ -13,9 +13,66 @@ body{
     width: 50%;
     border: 2px solid cyan;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+#statsContainer{
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 0px;
+    text-align: center;
 }
+#sbContainer{
+    
+}
+#ebContainer{
+    
+}
+#barGraph{
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transform: rotate(180deg);
+}
+
+
+/*150 is max-height*/
+#endBar{
+    height: 5px;
+    width: 50px; 
+    background-color: cyan;
+    transition: height 1s linear;
+    z-index: 1;
+}
+#startBar{
+    height: 5px;
+    width: 50px;
+    background-color: cyan;
+    transition: height 1s linear;
+    z-index: 1;
+}
+/* options bar graph */
+
+/*50%*/
+.even{
+    height: 75px;
+}
+/*100%*/
+.max{
+    height: 150px;
+}
+/*25%*/
+.quarter{
+    height: 37.5px;
+}
+/*75%*/
+.tresQ{
+    height: 112.5px;
+}
+
 #top2{
     width: 50%;
     border: 2px solid cyan;
@@ -115,15 +172,10 @@ div{
 
 .view{
     font-size: xx-large;
-    width: 300px;
-    margin-top: 50px;
+    width: 90px;
+    margin: 0px;
 }
-#sbView{
-    margin-top: 75px;
-}
-#ebView{
-    margin-top: 75px;
-}
+
 
 #darkLight{
     display: none;
