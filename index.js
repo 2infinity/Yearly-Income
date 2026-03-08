@@ -164,11 +164,22 @@ function manipulationLight(){
 
 clearBtn.addEventListener("click", clearInput);
 
-function clearInput(){
+function clearInput() {
+    // 1. Reset Starting Balance
     sb.value = "0";
+
+    // 2. Select all income and expense inputs and set to empty or 0
+    const allInputs = document.querySelectorAll('input[id$="Inc"], input[id$="Exp"]');
+    allInputs.forEach(input => {
+        input.value = ""; 
+    });
+
+    // 3. Reset the displayed monthly difference text (the .month-result divs)
+    const allResults = document.querySelectorAll(".month-result");
+    allResults.forEach(div => {
+        div.textContent = "0.00";
+    });
+
+    // 4. Run your calculation engine to update the bars and totals
     updateGrandTotal();
-    const month = e.target.getAttribute("data-month");
-    if (month) {
-        calculateMonth(month);
-    }
 }
