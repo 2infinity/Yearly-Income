@@ -88,13 +88,45 @@ function updateGrandTotal() {
     const endBalanced = startingBalanceValue + total;
     const growth = (total / startingBalanceValue) * 100;
     if(endBalanced>startingBalanceValue){
-            if (growth > 125) {
-    startBar.style.height = "37.5px";
-    endBar.style.height = "140px";
-}
-      else if(growth>99){
-           endBar.style.height = "150px";
-           startBar.style.height = "75px";
+        if (growth > 190) {
+        startBar.style.height = "8px";
+        endBar.style.height = "140px";
+        }
+        else if(growth>180){
+            startBar.style.height = "12px";
+            endBar.style.height = "140px";
+        }
+        else if(growth>170){
+            startBar.style.height = "26px";
+            endBar.style.height = "140px";
+        }
+        else if(growth>160){
+            startBar.style.height = "33px";
+            endBar.style.height = "140px";
+        }
+        else if(growth>150){
+            startBar.style.height = "40px";
+            endBar.style.height = "140px";
+        }
+        else if(growth>140){
+            startBar.style.height = "46px";
+            endBar.style.height = "140px";
+        }
+        else if(growth>130){
+            startBar.style.height = "54px";
+            endBar.style.height = "140px";
+        }
+        else if(growth>120){
+            startBar.style.height = "60px";
+            endBar.style.height = "140px";
+        }
+        else if(growth>110){
+            startBar.style.height = "65px";
+            endBar.style.height = "140px";
+        }
+        else if(growth>99){
+           endBar.style.height = "140px";
+           startBar.style.height = "70px";
        }
        
        
